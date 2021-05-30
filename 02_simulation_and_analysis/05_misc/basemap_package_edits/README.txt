@@ -1,0 +1,1 @@
+These are edits made to the __init__.py file of the MPL Toolkits Basemap package, which was required by Opendrift. At the time, Opendrift did not have a method for reading in custom coastline data. I edited Basemap to read in different coastline data. Although not an ideal solution, it was the simplest solution.
