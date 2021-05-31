@@ -14,6 +14,7 @@ misc = r'C:\Users\jcristia\Documents\GIS\MSc_Projects\1Data_BASE\Seagrass\Seagra
 ross = r'C:\Users\jcristia\Documents\GIS\MSc_Projects\1Data_BASE\Seagrass\Seagrass_mymapping\Ross.gdb\Eelgrass_RossSites'
 tsawwassen = r'C:\Users\jcristia\Documents\GIS\MSc_Projects\1Data_BASE\Seagrass\Seagrass_mymapping\tsawwassen.gdb\eelgrass'
 hakaiCEC = r'C:\Users\jcristia\Documents\GIS\MSc_Projects\1Data_BASE\Seagrass\Seagrass_polys_Hakai_CEC\BC_SHZN_ZOS_polys.shp'
+# HAKAI REFERENCE: https://hecate.hakai.org/geonetwork/srv/eng/catalog.search#/metadata/0219e1d6-8dfc-4718-b89b-ea3dff06a70d
 hakaisurveyed2014 = r'C:\Users\jcristia\Documents\GIS\MSc_Projects\1Data_BASE\Seagrass\Seagrass_polys_Hakai_mapped\seagrass_polys_2014.gdb\seagrass_2014'
 hakaisurveyed2016 = r'C:\Users\jcristia\Documents\GIS\MSc_Projects\1Data_BASE\Seagrass\Seagrass_polys_Hakai_mapped\seagrass_polys_2016.gdb\hakai_seagrass_2016'
 washington = r'C:\Users\jcristia\Documents\GIS\MSc_Projects\1Data_BASE\Seagrass\Seagrass_Washington\SVMP_distribution.gdb\generalized_eelgrass_poly'
