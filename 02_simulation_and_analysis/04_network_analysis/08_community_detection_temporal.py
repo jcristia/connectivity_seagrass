@@ -302,7 +302,9 @@ df_resconn1 = pd.read_csv('interconnectivity.csv')
 df_resconn2 = pd.read_csv('interconnectivity_20201107.csv')
 df_resconn3 = pd.read_csv('interconnectivity_20201107_2.csv')
 df_resconn = pd.concat([df_resconn1, df_resconn2, df_resconn3])
-sns.set_context('paper', font_scale=2)
+sns.set_context('paper', font_scale=2.25)
+sns.set_style("white")
+sns.set_style('ticks')
 fig, ax = plt.subplots(figsize=(18, 12))
 # need to set limits otherwise it is hard to see the plateaus
 ax.set(xscale='log', xlim=(10**-7, 10**-2.5), ylim=(0,20))
@@ -312,7 +314,7 @@ x_coords = [0.0000007, 0.000008, 0.00009, 0.0009]
 y_coords = [0.75, 2, 4.9, 13]
 plt.scatter(x_coords, y_coords, marker='^', color='k', s=100)
 fig
-fig.savefig('resconn_20201108.png')
+fig.savefig('resconn_20210727.png')
 
 
 
