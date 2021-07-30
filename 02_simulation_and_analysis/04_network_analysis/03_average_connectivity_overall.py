@@ -85,9 +85,10 @@ df_freqstd = df.groupby(['from_id', 'to_id']).agg(
     date = ('date', 'first'),
     dateYR = ('dateYR', 'first'),
     dateSEA = ('dateSEA', 'first'),
-    timeintavg = ('time_int', 'mean'),
-    timeintmin = ('time_int', 'min'),
-    timeintmax = ('time_int', 'max')
+    pld = ('pld', 'min')
+    #timeintavg = ('time_int', 'mean'),
+    #timeintmin = ('time_int', 'min'),
+    #timeintmax = ('time_int', 'max')
     ).reset_index()
 
 gdf = gp.GeoDataFrame(df_freqstd)
