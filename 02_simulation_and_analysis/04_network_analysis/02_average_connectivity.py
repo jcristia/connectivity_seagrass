@@ -11,12 +11,10 @@ plds = ['01', '03', '07', '21', '60']
 shp_out = 'connectivity_average.shp'
 
 # read in shapefiles within folder as a geopanadas dataframe (gdf) and append to overall gdf
-conn = []
-for p in plds:
-    conn.append(os.path.join(shp_folder, file.format(p)))
 gdf_all = gp.GeoDataFrame()
-for shp in conn:
-    gdf = gp.read_file(shp)
+for p in plds:
+    gdf = gp.read_file(os.path.join(shp_folder, file.format(p)))
+    gdf['pld'] = int(p)
     gdf_all = gdf_all.append(gdf)
 gdf_all = gdf_all.astype({'from_id':int, 'to_id':int})
 
@@ -28,12 +26,13 @@ def mean_cust_denom(x):
     return m
 gdf_group = gdf_all.groupby(['from_id', 'to_id']).agg(
     prob_avg = ('prob', mean_cust_denom),
-    time_int = ('time_int', 'first'),
+    #time_int = ('time_int', 'first'), # I'm taking this out to avoid confusion since it was calculated incorrectly in the biology script.
     totalori = ('totalori', 'first'),
     date_start = ('date_start', 'first'),
-    geometry = ('geometry', 'first')
+    geometry = ('geometry', 'first'),
+    pld = ('pld', 'min') # take the minimum PLD
     )
-gdf_group = gdf_group.astype({'time_int':int, 'totalori':int})
+gdf_group = gdf_group.astype({'totalori':int})
 gdf_group = gdf_group.reset_index()
 
 # output
