@@ -1,6 +1,8 @@
 ## Code for "A biophysical model and network analysis of invertebrate community dispersal reveals regional patterns of seagrass habitat connectivity"
 
-Citation: *pending*
+Citation:
+Cristiani J, Rubidge E, Forbes C, Moore-Maley B and O’Connor M (2021) A Biophysical Model and Network Analysis of Invertebrate Community Dispersal Reveals Regional Patterns of Seagrass Habitat Connectivity. Front. Mar. Sci. 8:717469. doi: 0.3389/fmars.2021.717469
+https://www.frontiersin.org/articles/10.3389/fmars.2021.717469/abstract
 
 This paper analyzes the functional connectivity of seagrass habitat by simulating the dispersal of an eelgrass-associated invertebrate community.
 
